@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyland | Travel & Tourism App</title>
+
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/64232d5ea0.js" crossorigin="anonymous"></script>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Joyland.</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="admin_login.html" class="admin-btn">Admin Login</a>
+
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Explore The World With <span>Joyland</span></h1>
+
+            <div class="btn-box">
+                <a href="#" class="btn">Check Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Joyland</span></h2>
+            
+            <p>
+                Joyland is not just a travel and tourism company, 
+                it's a door to the extraordinary. Our mission 
+                is to ignite your wanderlust and transform your 
+                travel dreams into reality. At Joyland, we believe 
+                in crafting personalized journeys that resonate 
+                with your passions and desires. With expert guidance, 
+                tailored experiences, and a commitment to creating 
+                unforgettable memories, we're here to ensure your 
+                travels are nothing short of exceptional. Joyland 
+                is your partner in exploring the world with joy and 
+                wonder.
+            <p>
+        </div>
+    </section>
+
+    <!-- Gallery section design -->
+    <section class="gallery" id="gallery">
+        
+            <h2 class="heading">Our <span>Gallery</span></h2>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/image_01.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image_02.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image_03.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image_04.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image_05.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/image_06.jpg" alt="Image 6">
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- packages section design -->
+    <section class="packages" id="packages">
+
+        <h2 class="heading">Trip <span>Packages</span></h2>
+
+        <div class="wrapper">
+
+            <div class="package">
+                <div class="name">Basic</div>
+                <div class="price">$149</div>
+                <div class="trial">1 day trip</div>
+                <hr>
+                <ul>
+                    <li>Travel to 2 exotic places</li>
+                    <li>3 meals a day</li>
+                    <li>Normal stay</li>
+                    <li>Tour guides</li>
+                    <li>Travel on bus</li>
+                </ul>
+            </div>
+    
+    
+            <div class="package popular">
+                <div class="name">Popular</div>
+                <div class="price">$299</div>
+                <div class="trial">4 days trip</div>
+                <hr>
+                <ul>
+                    <li>Travel to 8 exotic places</li>
+                    <li>3 meals a day</li>
+                    <li>Hillstation stay</li>
+                    <li>Campfire Serenade</li>
+                    <li>Tour guides</li>
+                    <li>Jungle river safari</li>
+                </ul>
+            </div>
+    
+    
+            <div class="package">
+                <div class="name">Premium</div>
+                <div class="price">$599</div>
+                <div class="trial">7 days trip</div>
+                <hr>
+                <ul>
+                    <li>Travel to 13 exotic places</li>
+                    <li>3 meals a day</li>
+                    <li>Hillstation stay (3-star hotels)</li>
+                    <li>Campfire Serenade</li>
+                    <li>Tour guides</li>
+                    <li>Jungle river safari</li>
+                    <li>Travel insurance</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="booktrip">
+			<a href="booktrip_form.html"> <button>Book Trip</button> </a>
+        </div>
+    </section>
+
+
+    <!-- contact section design -->
+    
+    <section>
+        <div class="contact" id="contact">
+            <h2 class="heading">Have queries? <span>Let's connect</span></h2>
+        
+            <form action="query" method="post">  
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
+                    <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+                    <textarea name="text" class="feedback-input" placeholder="Message" required></textarea>
+                    <input class="submit-button" type="submit" value="Submit Request"/>
+            </form>
+            
+        </div>
+    </section>
+    
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="text-left">
+                &copy; 2023 Copyright: joyland.com
+            </p>
+            <p class="text-right">
+                <i>Designed and developed by : Debasis Pradhan</i>
+            </p>
+        </div>
+    </footer>
+    
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

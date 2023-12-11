@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --second-bg-color: #fdfdfd;
+  --third-bg-color: #fff5eb;
+  --text-color: #ffb902;
+  --btn-color-new: #353428;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  color: var(--text-color);
+}
+
+
+/* Table */
+
+.boooking-data{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10rem;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.boooking-data table{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background: var(--second-bg-color);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+    border-collapse: collapse;
+    overflow: auto; /* Add a scrollbar if content overflows */
+}
+
+.boooking-data th{
+    background-color: var(--text-color);
+    color: var(--btn-color-new);
+    font-size: 1.6rem;
+    padding: 2rem;
+    text-align: left;
+    border: none;
+}
+
+.boooking-data table td{
+    color: var(--btn-color-new);
+    font-size: 1.4rem;
+    padding: 2rem;
+    text-align: left;
+    border: none;
+}
+
+.boooking-data table tr:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: #1976D2;
+    --light-primary: #CFE8FF;
+    --danger: #D32F2F;
+    --light-danger: #FECDD3;
+    --warning: #FBC02D;
+    --light-warning: #FFF2C6;
+    --success: #388E3C;
+    --light-success: #BBF7D0;
+
+    --second-bg-color: #fdfdfd;
+    --third-bg-color: #fff5eb;
+    --text-color: #ffb902;
+    --btn-color-new: #353428;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  background: var(--light-success);
+  color: var(--text-color);
+
+  min-height: 100vh;
+  width: 100%;
+}
+
+.contact{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.contact .form{
+  padding: 2.5rem;
+}
+
+.form header{
+  color: var(--success);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+
+
+.form input::placeholder,
+.form select::placeholder {
+    color: #797676; /* Set the desired color for the placeholder text (green in this case) */
+}
+.form select option {
+  color: #797676; /* Set the desired color for the options (green in this case) */
+}
+
+.form select + label {
+  color: #797676; /* Set the desired color for the label above the select */
+}
+
+
+
+
+.form input, .form select{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    line-height: 1.8rem;
+    padding: 1.4rem;  
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    color: #797676;
+    border-radius: 10px;
+}
+
+.form input:focus, .form select:focus{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form input.login-button{
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    width: 12rem;
+    background: var(--success);
+    color: var(--second-bg-color);
+    margin: 2rem 0;
+    border-radius: 50rem;
+    font-size: 1.8rem;
+    align-self: center;
+}
+
+.form input.login-button:hover{
+    color: var(--light-success);
+    transition: 0.4s;
+}
+
+.back-home {
+    font-size: 16px;
+    color: var(--btn-color-new);
+    text-align: center;
+}
+
+.back-home label:hover{
+    text-decoration: underline;
+}
+
+.form a{
+    font-size: 16px;
+    color: var(--btn-color-new);
+    text-align: center;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+

@@ -1,0 +1,83 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --danger: #D32F2F;
+    --light-danger: #FECDD3;
+    --second-bg-color: #fdfdfd;
+    --third-bg-color: #fff5eb;
+    --text-color: #ffb902;
+    --btn-color-new: #353428;
+}
+section {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: var(--light-danger);
+}
+
+button {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 5px 18px 5px 18px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 50rem;
+  background: var(--danger);
+  cursor: pointer;
+}
+
+button.show-modal,
+.modal-box {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal-box i {
+  font-size: 60px;
+  color: var(--danger);
+}
+
+.modal-box h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--btn-color-new);
+}
+
+.modal-box h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #797676; 
+  text-align: center;
+}
+

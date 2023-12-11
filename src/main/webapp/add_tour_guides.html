@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Tour Guides</title>
+    <link rel="stylesheet" href="add_tour_guides.css">
+</head>
+<body>
+    <section>
+        <div class="contact">        
+            <div class="login form">
+                <header>Add Tour Guides</header>
+
+                <form action="tourguides" method="post">
+                  <input name="name" type="text" class="feedback-input" placeholder="Enter Name" required />
+                  <input name="email" type="email" class="feedback-input" placeholder="Enter Email" required />
+                  <input name="phone" type="tel" class="feedback-input" placeholder="Enter Phone Number" required maxlength="10" pattern="[0-9]{10}"/>
+
+                  <div class="select-wrapper">
+                    <select name="gender" class="feedback-input" required>
+                      <option value="" disabled selected>Select gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
+
+                  <input name="age" type="number" class="feedback-input" placeholder="Enter Age" required />
+                  
+                  <input type="submit" class="login-button" value="Register Now">
+                </form>
+
+                <div class="back-home">
+                    <a href="admin_dashboard.jsp">Back to dashboard</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
